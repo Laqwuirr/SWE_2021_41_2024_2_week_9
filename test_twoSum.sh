@@ -26,8 +26,8 @@ pass_count=0
 # Loop through each test case
 for ((i=0; i<num_cases; i++)); do
     nums=${nums_list[i]}
-    target=${target[i]}
-    answer=${answer[i]}
+    target=${targets[i]}
+    answer=${answers[i]}
     
     # Run the twoSum function and capture the output
     output=$(python3 -c "from main import twoSum; print(twoSum($nums, $target))")
